@@ -1,0 +1,11 @@
+apiVersion: addons.k8s.io/v1alpha1
+kind: Monitoring
+metadata:
+ labels:
+   k8s-app: monitoring-operator
+ name: monitoring-sample
+ namespace: kube-system
+spec:
+ channel: stable
+ ...
+ enablePrometheus: true
